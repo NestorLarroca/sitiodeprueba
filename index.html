@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tarjetas</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/styleTarjetas.css">
+	</head>
+	<body>
+		<div class="contenedorTarjetas">
+			<div class="tarjeta" id="id0">
+				<header>
+					<h1>HTML</h1>
+					<span style="font-size: 3em; color: tomato;">
+  						<i class="fas fa-brands fa-html5"></i>
+					</span>
+				</header>
+				<p>HTML (HyperText Markup Languaje) es un lenguaje de etiquetas utilizado para crear páginas web.</p>
+				<p>Sirve como el lenguaje fundamental para estructurar y organizar el contenido web.</p>
+				<p>HTML es esencial para crear la estructura básica de una página web.</p>
+				<p>HTML proporciona la base para e diseño y funcionalidad de una página web.</p>
+				
+			</div>
+			<div class="tarjeta" id="id1">
+				<header>
+					<h1>CSS</h1>
+					<span style="font-size: 3em; color: blue;">
+  						<i class="fa-brands fa-css3-alt"></i>
+					</span>
+				</header>
+				<p>CSS (Cascading Style Sheets) es un lenguaje de estilo.</p>
+				<p>Se utiliza para controlar la presentación y diseño de páginas web.</p>
+				<p>CSS sirve para aplicar estilos visuales a elementos HTML.</p>
+				<p>CSS se utiliza para mejorar la apariencia y el diseño de una página web.</p>
+				
+			</div>
+			<div class="tarjeta" id="id2">
+				<header>
+					<h1>JS</h1>
+					<span style="font-size: 3em; color: olive;">
+  						<i class="fa-brands fa-square-js"></i>
+					</span>
+				</header>
+				<p>JS (JavaScript) es un lenguaje de programación.</p>
+				<p>Permite implementar funciones complejas en páginas web.</p>
+				<p>Se utiliza para hacer que las páginas web sean dinámicas.</p>
+				<p>Los usuarios pueden así interactuar con una página gracias a este lenguaje.</p>
+				
+			</div>
+			<div class="navegador">
+				<button class="seleccionado" onclick = "mostrar(0)">HTML</button>
+				<!--
+				<button class="seleccionado fondo_On" onclick = "mostrar(0)">HTML</button>*/
+				-->
+				<button onclick = "mostrar(1)">CSS</button>
+				<button onclick = "mostrar(2)">JS</button>
+			</div>
+		</div>
+		<script src = "./js/tarjetas.js"></script>
+	<body>
+</html>
+
+
+

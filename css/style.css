@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Martian Mono";
+}
+
+body {
+	background-image: url("imagenes/fondo.jpg");
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	color: #3d3d3d;
+}
+
+.contenedorTarjetas {
+	background-color: rgba(255,255,255,0.5);
+	border: 2px solid #000;
+	width: 1180px;
+	height: 550px;
+	position: relative;
+}
+
+.tarjeta {
+	position: absolute;
+	background-color: #ffffff;
+	border-radius: 20px;
+	width: 600px;
+	height: 390px;
+	top: 45px;
+	left: 290px;
+	padding: 20px;
+	text-align: center;
+}
+
+header {
+	border-bottom: 1px solid #3d3d3d;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+header span i {
+	font-size: 80px;
+}
+
+.tarjeta h1 {
+	margin-bottom: 10px;
+}
+
+.tarjeta p {
+	text-align: left;
+	line-height: 24px;
+	margin-bottom: 18px;
+}
+
+button {
+	display: inline-block;
+	width: 120px;
+	padding: 10px;
+	border: 2px solid #3d3d3d;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.navegador {
+	position: absolute;
+	bottom: 30px;	
+	width: 100%;
+	text-align: center;
+}
+
+.seleccionado {
+	background-color: #3d3d3d;
+	color: #ffffff;
+}
+
+/*ESTAS CLASES SE AGREGARÁN DINAMICAMENTE*/
+
+@keyframes aparecer {
+	from{
+		opacity: 0;
+		transform: scale(0.2);
+	}
+	to{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.aparecer {
+	position: absolute;
+	animation: aparecer 1.5s forwards linear;
+	animation-delay: 0.5s;
+}
+
+@keyframes desaparecer {
+	0%{
+		opacity: 1;
+		transform: scale(1);
+	}
+	100%{
+		opacity: 0;
+		transform: scale(0.2);
+	}
+}
+
+.desaparecer {
+	position: absolute;
+	animation: desaparecer 0.5s forwards linear;
+	animation-delay: 0.2s;
+}
+
+#id0, #id1, #id2 {
+	opacity: 0;
+}
+
+/*
+.fondo_On {
+	background-image: url("imagenes/on.png");
+	background-position: center;
+	background-size: 120px 40px;
+	background-repeat:no-repeat;
+	width: 120px;
+   	height: 40px;
+   	text-align: right;
+   	color: black;
+}
+
+	
+.fondo_Off {
+	background-image: url("imagenes/off.png");
+	background-position: center;
+	background-size: 120px 40px;
+	background-repeat:no-repeat;
+	width: 120px;
+   	height: 40px;
+   	text-align: left;
+   	color: black;
+}
+*/
+
+
+
